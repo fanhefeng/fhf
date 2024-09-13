@@ -12,8 +12,11 @@ on:
 
 # 设置 GITHUB_TOKEN 的权限，以允许部署到 GitHub Pages
 permissions:
+  # 允许读取仓库内容的权限。
   contents: read
+  # 允许写入 GitHub Pages 的权限。
   pages: write
+  # 允许写入 id-token 的权限。
   id-token: write
 
 # 只允许同时进行一次部署，跳过正在运行和最新队列之间的运行队列
@@ -27,9 +30,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # 克隆仓库（拉取代码）
       - name: Checkout
         uses: actions/checkout@v4
         with:
+          # 保留 Git 信息
           fetch-depth: 0 # 如果未启用 lastUpdated，则不需要
       - uses: pnpm/action-setup@v3 # 如果使用 pnpm，请取消注释
       # - uses: oven-sh/setup-bun@v1 # 如果使用 Bun，请取消注释
@@ -38,23 +43,35 @@ jobs:
         with:
           node-version: 18
           cache: pnpm
+
+      # 使用 最新的 PNPM
+      # 你也可以指定为具体的版本
+      # - uses: pnpm/action-setup@v4
+      #   name: Install pnpm
+      #   with:
+      #     version: latest
+      #     # version: 9
+      #     run_install: false
       - name: Setup Pages
         uses: actions/configure-pages@v4 # 在工作流程自动配置 GithubPages
+      # 安装依赖
       - name: Install dependencies
         run: pnpm install # 或 npm install / yarn install / bun install
       - name: Build with VitePress
-        run: pnpm run docs:build # 或 npm docs:build / yarn docs:build / bun run docs:build
+        run: |
+          echo ${{ github.workspace }}
+          pnpm run docs:build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3 # 上传构建产物
         with:
-          path: docs/dist # 指定上传的路径，当前是根目录，如果是docs需要加docs/的前缀
+          path: "docs/dist" # 指定上传的路径，当前是根目录，如果是docs需要加docs/的前缀
 
   # 部署工作
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }} # 从后续的输出中获取部署后的页面URL
-    needs: build
+    needs: build # 等待构建工作完成
     runs-on: ubuntu-latest
     name: Deploy
     steps:

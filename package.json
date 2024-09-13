@@ -3,6 +3,16 @@
   "version": "1.0.0",
   "description": "fhf's room",
   "main": "index.js",
+  "files": [
+    "bin",
+    "dist",
+    "types",
+    "template",
+    "client.d.ts",
+    "theme.d.ts",
+    "theme-without-fonts.d.ts",
+    "lib"
+  ],
   "scripts": {
     "start": "npm run docs:dev",
     "docs:dev": "vitepress dev docs",
@@ -28,6 +38,7 @@
   "dependencies": {
     "markdown-it-mathjax3": "^4.3.2"
   },
+  "packageManager": "pnpm@9.10.0",
   "pnpm": {
     "peerDependencyRules": {
       "ignoreMissing": [

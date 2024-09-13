@@ -10,15 +10,15 @@ export const zh = defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: "首页", link: "/" },
-      { text: "示例", link: "/markdown-examples" },
+      { text: "首页", link: "/zh" },
+      { text: "示例", link: "/zh/markdown-examples" },
     ],
     sidebar: [
       {
         text: "示例",
         items: [
-          { text: "Markdown示例", link: "/markdown-examples" },
-          { text: "API示例", link: "/api-examples" },
+          { text: "Markdown示例", link: "/zh/markdown-examples" },
+          { text: "API示例", link: "/zh/api-examples" },
         ],
       },
     ],

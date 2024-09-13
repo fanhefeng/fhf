@@ -10,7 +10,7 @@ export const zh = defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: "首页", link: "/zh" },
+      { text: "首页", link: "/zh/" },
       { text: "示例", link: "/zh/markdown-examples" },
     ],
     sidebar: [

@@ -3,16 +3,7 @@
   "version": "1.0.0",
   "description": "fhf's room",
   "main": "index.js",
-  "files": [
-    "bin",
-    "dist",
-    "types",
-    "template",
-    "client.d.ts",
-    "theme.d.ts",
-    "theme-without-fonts.d.ts",
-    "lib"
-  ],
+  "files": [],
   "scripts": {
     "start": "npm run docs:dev",
     "docs:dev": "vitepress dev docs",

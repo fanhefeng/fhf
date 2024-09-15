@@ -32,7 +32,7 @@ export const shared = defineConfig({
   head: [
     // ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }], // 设置网站图标
     // ['link', { rel: 'icon', type:' image/x-icon', href: '/favicon.ico' }], // 设置网站图标
-    ['link', { rel: 'icon', type: 'image/png', href: `${base}/logo.png` }], // 设置网站图标
+    ['link', { rel: 'icon', type: 'image/png', href: `${base}logo.png` }], // 设置网站图标
     // ['meta', { name: 'theme-color', content: '#5f67ee' }], // 设置主题颜色
     // ['meta', { property: 'og:type', content: 'website' }], // 设置网站类型
     // ['meta', { property: 'og:locale', content: 'zh' }], // 设置网站语言

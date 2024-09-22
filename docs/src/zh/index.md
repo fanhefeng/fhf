@@ -9,16 +9,26 @@ hero:
   actions:
     - theme: brand
       text: Markdown 示例
-      link: /markdown-examples
+      link: /example/markdown-examples
     - theme: alt
       text: API 示例
-      link: /api-examples
+      link: /example/api-examples
   image:
     src: /logo.png
     alt: fhf
 
 features:
-  - icon: 
+  - title: 前端
+    icon:
+      src: /assets/icon/frontend.svg
+    details: 什么是前端
+    link: /frontend/introduction
+  - title: 网络
+    icon:
+      src: /assets/icon/network.svg
+    details: 网络相关知识
+    link: /network/OSI
+  - icon:
       # type FeatureIcon =
       # | string
       # | { src: string; alt?: string; width?: string; height: string }
@@ -38,13 +48,13 @@ features:
     link: https://v.qq.com/channel/movie
     # linkText: 点击前往
     rel: external
-  - icon: 
+  - icon:
       src: /assets/icon/music.svg
     title: 音乐
     details: QQ音乐
     link: https://y.qq.com/
     rel: external
-  - icon: 
+  - icon:
       src: /assets/icon/game.svg
     title: 游戏
     details: steam平台

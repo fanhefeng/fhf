@@ -10,15 +10,15 @@ export const en = defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "Home", link: "/en" },
-      { text: "Examples", link: "/en/markdown-examples" },
+      { text: "Examples", link: "/en/example/markdown-examples" },
     ],
 
     sidebar: [
       {
         text: "Examples",
         items: [
-          { text: "Markdown Examples", link: "/en/markdown-examples" },
-          { text: "Runtime API Examples", link: "/en/api-examples" },
+          { text: "Markdown Examples", link: "/en/example/markdown-examples" },
+          { text: "Runtime API Examples", link: "/en/example/api-examples" },
         ],
       },
     ],

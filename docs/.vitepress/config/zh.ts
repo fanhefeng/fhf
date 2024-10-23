@@ -18,8 +18,8 @@ export const zh = defineConfig({
 				{
 					text: "示例",
 					items: [
-						{ text: "Markdown示例", link: "./markdown-examples" },
-						{ text: "API示例", link: "./api-examples" },
+						{ text: "Markdown示例", link: "/example/markdown-examples" },
+						{ text: "API示例", link: "/example/api-examples" },
 					],
 				},
 			],
@@ -38,9 +38,22 @@ export const zh = defineConfig({
 					items: [
 						{ text: "什么是前端", link: "/frontend/introduction" },
 						{
+							text: "技术点",
+							link: "/frontend/technology",
+						},
+						{
 							text: "性能优化",
 							link: "/frontend/performance",
 						},
+					],
+				},
+			],
+			"/share": [
+				{
+					text: "分享",
+					items: [
+						{ text: "简历怎么写？", link: "/share/resume_skill" },
+						{ text: "程序员——数字时代的炼金术师", link: "/share/programmer" },
 					],
 				},
 			],

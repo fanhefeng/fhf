@@ -14,7 +14,7 @@ hero:
       text: API Examples
       link: /example/api-examples
   image:
-    src: /logo.png
+    src: /assets/images/fhf.jpg
     alt: fhf
 
 features:

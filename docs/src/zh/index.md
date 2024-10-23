@@ -14,10 +14,15 @@ hero:
       text: API 示例
       link: /example/api-examples
   image:
-    src: /logo.png
+    src: /assets/images/fhf.jpg
     alt: fhf
 
 features:
+  - title: 分享
+    icon:
+      src: /assets/icon/share.svg
+    details: 随便写写
+    link: /share/resume_skill
   - title: 前端
     icon:
       src: /assets/icon/frontend.svg
@@ -66,11 +71,12 @@ features:
 :root {
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe 30%, #41d1ff);
-
   --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe 50%, #47caff 50%);
   --vp-home-hero-image-filter: blur(44px);
 }
-
+.image-src {
+  border-radius: 50%;
+}
 @media (min-width: 640px) {
   :root {
     --vp-home-hero-image-filter: blur(56px);

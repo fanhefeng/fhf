@@ -1,4 +1,4 @@
-import { defineConfig, type DefaultTheme } from "vitepress";
+import { defineConfig } from "vitepress";
 // import { createRequire } from "module";
 // const require = createRequire(import.meta.url);
 // const pkg = require("../../package.json");
@@ -9,16 +9,16 @@ export const en = defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: "Home", link: "/en" },
-      { text: "Examples", link: "/en/example/markdown-examples" },
+      {text: "Home", link: "/en"},
+      {text: "Examples", link: "/en/example/markdown-examples"},
     ],
 
     sidebar: [
       {
         text: "Examples",
         items: [
-          { text: "Markdown Examples", link: "/en/example/markdown-examples" },
-          { text: "Runtime API Examples", link: "/en/example/api-examples" },
+          {text: "Markdown Examples", link: "/en/example/markdown-examples"},
+          {text: "Runtime API Examples", link: "/en/example/api-examples"},
         ],
       },
     ],
@@ -29,7 +29,7 @@ export const en = defineConfig({
 
     footer: {
       message: "Released under the MIT License.",
-      copyright: `Copyright © ${new Date().getFullYear() - 0 > 2024 ? "2024-" + new Date().getFullYear() : 2024} fhf`,
+      copyright: `Copyright © ${new Date().getFullYear() > 2024 ? "2024-" + new Date().getFullYear() : 2024} fhf`,
     },
 
     docFooter: {

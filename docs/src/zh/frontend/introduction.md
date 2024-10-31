@@ -48,7 +48,7 @@ outline: deep
 
 #### 技术栈
 
-##### electron
+##### 1、electron
 
 ### 五、移动端 app
 
@@ -60,13 +60,13 @@ outline: deep
 
 #### 技术栈
 
-##### flutter
+##### 1、flutter
 
-##### react native
+##### 2、react native
 
-##### uni-app
+##### 3、uni-app
 
-## 页面构建
+## JS与页面构建
 
 ### 浏览器：DOM 和 BOM
 

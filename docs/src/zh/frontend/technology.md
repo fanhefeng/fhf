@@ -1,6 +1,6 @@
 # 技术点
 
-## 深度克隆
+## 深度克隆 `2024 年 10 月`
 
 ```javascript
 function deepClone(obj, hash = new WeakMap()) {

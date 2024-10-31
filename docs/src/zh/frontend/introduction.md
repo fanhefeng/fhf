@@ -118,10 +118,23 @@ outline: deep
 
 ## 工程化
 
-1. 项目配置
-2. 压缩打包
-3. 代码规范
-4. CI/CD
+### 1. 项目配置
+
+### 2. 压缩打包
+
+#### Vite
+
+##### vite-plugin
+
+这是一个 vite 项目的基本配置以及完成了一个简易的 md 文件转换成 vue 组件的插件。
+[https://github.com/fanhefeng/vite-plugin-vue-md](https://github.com/fanhefeng/vite-plugin-vue-md)
+`2024 年 10 月 31 日`
+
+#### Webpack
+
+### 3. 代码规范
+
+### 4. CI/CD
 
 ## 计算机知识
 

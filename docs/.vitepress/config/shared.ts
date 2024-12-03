@@ -28,6 +28,20 @@ export const shared = defineConfig({
   //     return items.filter((item) => !item.url.includes("migration")); // 过滤掉包含`migration`的URL
   //   },
   // },
+  /**
+   * 在页面的中添加og标签，即添加meta Property=og标签。
+   * og标签是一种新的http头部标记，即Open Graph Protocol（开放内容协议）。
+   * 在页面添加这种协议可以让网页成为一个“富媒体对象”，表示同意网页内容可以被其他社会化网站引用等。
+   * 主要的og标签属性：
+   * og:type 表示页面的类型，常用值:article、news、book、movie、product...
+   * og:title 页面的标题
+   * og:description 页面的简单描述
+   * og:url 页面地址
+   * og:image 略缩图地址
+   * og:site_name 页面所在网站名
+   * og:videosrc 视频或者Flash地址
+   * og:audiosrc 音频地址    
+   */
   /* prettier-ignore */
   head: [
     // ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }], // 设置网站图标
